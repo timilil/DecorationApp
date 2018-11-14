@@ -1,0 +1,86 @@
+{
+   bound_relative_root: {
+      x: 0.5,
+      y: 0,
+      z: 0.5,
+   },
+   materials: [
+      {
+         name: "statue3_tex0",
+         parameters: [
+            {
+               baseColor: "statue3_tex0",
+            },
+            {
+               baseColorTint: [
+                  1,
+                  1,
+                  1,
+                  1,
+               ],
+            },
+            {
+               metallic: 0,
+            },
+            {
+               roughness: 1,
+            },
+            {
+               opacity: null,
+            },
+         ],
+         source: "build/sceneform_sdk/default_materials/obj_material.sfm",
+      },
+      {
+         name: "statue3_tex1",
+         parameters: [
+            {
+               baseColor: "statue3_tex1",
+            },
+            {
+               baseColorTint: [
+                  1,
+                  1,
+                  1,
+                  1,
+               ],
+            },
+            {
+               metallic: 0,
+            },
+            {
+               roughness: 1,
+            },
+            {
+               opacity: null,
+            },
+         ],
+         source: "build/sceneform_sdk/default_materials/obj_material.sfm",
+      },
+   ],
+   model: {
+      attributes: [
+         "Position",
+         "TexCoord",
+         "Orientation",
+      ],
+      collision: {},
+      file: "sampledata/statue/statue3/statue3.obj",
+      name: "statue3",
+      recenter: false,
+      scale: 0.11488400000000001,
+   },
+   samplers: [
+      {
+         file: "sampledata/statue/statue3\\statue3_tex0.jpg",
+         name: "statue3_tex0",
+         pipeline_name: "statue3_tex0.jpg",
+      },
+      {
+         file: "sampledata/statue/statue3\\statue3_tex1.jpg",
+         name: "statue3_tex1",
+         pipeline_name: "statue3_tex1.jpg",
+      },
+   ],
+   version: "0.52:1",
+}

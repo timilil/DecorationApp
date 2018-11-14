@@ -1,0 +1,99 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+apply plugin: "com.google.ar.sceneform.plugin"
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.example.timil.arproject"
+        minSdkVersion 24
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'com.android.support:appcompat-v7:28.0.0-rc02'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.google.ar.sceneform.ux:sceneform-ux:1.4.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}
+
+
+sceneform.asset('sampledata/statue/statue3/statue3.obj',
+        'default',
+        'sampledata/statue/statue3/statue3.sfa',
+        'src/main/assets/statue3')
+
+sceneform.asset('sampledata/Chair/Chair.obj',
+        'default',
+        'sampledata/Chair/Chair.sfa',
+        'src/main/assets/Chair')
+
+sceneform.asset('sampledata/Center Table/Center Table.obj',
+        'default',
+        'sampledata/Center Table/Center Table.sfa',
+        'src/main/assets/Center Table')
+
+sceneform.asset('sampledata/Samsung_Smart_TV_55_Zoll/Samsung Smart TV 55 Zoll.obj',
+        'default',
+        'sampledata/Samsung_Smart_TV_55_Zoll/Samsung Smart TV 55 Zoll.sfa',
+        'src/main/assets/Samsung Smart TV 55 Zoll')
+
+sceneform.asset('sampledata/IKE160153_obj/IKE160153.obj',
+        'default',
+        'sampledata/IKE160153_obj/IKE160153.sfa',
+        'src/main/assets/IKE160153')
+
+
+
+
+sceneform.asset('sampledata/IKE170011_obj/IKE170011.obj',
+        'default',
+        'sampledata/IKE170011_obj/IKE170011.sfa',
+        'src/main/assets/IKE170011')
+
+sceneform.asset('sampledata/16-metal_bed/krovat-2.obj',
+        'default',
+        'sampledata/16-metal_bed/krovat-2.sfa',
+        'src/main/assets/krovat-2')
+
+sceneform.asset('sampledata/IKE020001_obj/IKEA-Arild_2_Seat_Sofa-3D.obj',
+        'default',
+        'sampledata/IKE020001_obj/IKEA-Arild_2_Seat_Sofa-3D.sfa',
+        'src/main/assets/IKEA-Arild_2_Seat_Sofa-3D')
+
+sceneform.asset('sampledata/IKE010003_obj/IKEA-Round_Bjursta_Table_and_Chairs-3D.obj',
+        'default',
+        'sampledata/IKE010003_obj/IKEA-Round_Bjursta_Table_and_Chairs-3D.sfa',
+        'src/main/assets/IKEA-Round_Bjursta_Table_and_Chairs-3D')
+
+sceneform.asset('sampledata/IKE020002_obj/IKEA-Beddinge_Sofa_bed_frame-3D.obj',
+        'default',
+        'sampledata/IKE020002_obj/IKEA-Beddinge_Sofa_bed_frame-3D.sfa',
+        'src/main/assets/IKEA-Beddinge_Sofa_bed_frame-3D')
+
+sceneform.asset('sampledata/IKE020018_obj/IKEA-Poang_Armchair-3D.obj',
+        'default',
+        'sampledata/IKE020018_obj/IKEA-Poang_Armchair-3D.sfa',
+        'src/main/assets/IKEA-Poang_Armchair-3D')
